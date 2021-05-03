@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_03_224819) do
+ActiveRecord::Schema.define(version: 2021_05_03_233452) do
 
   create_table "herbs", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,12 @@ ActiveRecord::Schema.define(version: 2021_05_03_224819) do
     t.text "medicinal_uses"
     t.text "history"
     t.text "spiritual_uses"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "properties", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
