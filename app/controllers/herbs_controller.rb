@@ -11,6 +11,7 @@ class HerbsController < ApplicationController
     end
 
     def create
+        # need error handling
         herb = Herb.create(herb_params)
         render json: herb
     end

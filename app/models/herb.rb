@@ -7,7 +7,5 @@ class Herb < ApplicationRecord
     # has_many :flavors, through: :qualities 
     # has_many :energetics, through: :qualities 
 
-    def attributes()
-
-    end
+   
 end
