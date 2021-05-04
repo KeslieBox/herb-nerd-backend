@@ -9,4 +9,15 @@ class HerbsController < ApplicationController
         herb = Herb.find_by(id: params[:id])
         render json: herb
     end
+
+    def create
+        herb = Herb.create(herb_params)
+        render json: herb
+    end
+
+    private
+
+    def herb_params
+        params.require(:herb).permit(:common_name, :name, :history, :spiritual_uses, :medicinal_uses)
+    end
 end
