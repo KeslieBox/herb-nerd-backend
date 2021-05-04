@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_03_235605) do
+ActiveRecord::Schema.define(version: 2021_05_04_032707) do
 
   create_table "herbs", force: :cascade do |t|
-    t.string "name"
+    t.string "latin_name"
     t.string "common_name"
     t.text "medicinal_uses"
     t.text "history"
