@@ -1,7 +1,8 @@
 class QualitiesController < ApplicationController
 
     def create
-
+        quality = Quality.create(quality_params)
+        render json: quality
     end
 
     private

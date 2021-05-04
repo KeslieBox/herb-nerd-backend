@@ -5,7 +5,8 @@ class PropertiesController < ApplicationController
     end
 
     def create
-
+        property = Property.create(property_params)
+        render json: property
     end
 
     private
