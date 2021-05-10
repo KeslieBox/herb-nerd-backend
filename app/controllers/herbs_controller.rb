@@ -11,6 +11,7 @@ class HerbsController < ApplicationController
     end
 
     def create
+        binding.pry
         # need error handling
         herb = Herb.create(herb_params)
         render json: herb, key_transform: :camel_lower

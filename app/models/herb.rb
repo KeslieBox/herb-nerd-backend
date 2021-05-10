@@ -12,9 +12,12 @@ class Herb < ApplicationRecord
     
     def properties_attributes=(properties_attributes)             
             properties_attributes.values.each do |p|
-                if p[:name]
+                if !p[:name].empty?
                     property = Property.find_or_create_by(name: p[:name])
                     self.properties << property
+                else  
+                    binding.pry
+                    properties_attributes = {}
                 end
             end
         
