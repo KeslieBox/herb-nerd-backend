@@ -10,6 +10,8 @@ class PropertiesController < ApplicationController
     end
 
     def create
+        # binding.pry
+        # create helper method to lowercase and sanitize incoming properties
         property = Property.create(property_params)
         render json: property, key_transform: :camel_lower
     end
@@ -17,7 +19,7 @@ class PropertiesController < ApplicationController
     private
 
     def property_params
-        # do i need to permit id?
+        # how to accept array from params
         params.require(:property).permit(:name)
     end
 end

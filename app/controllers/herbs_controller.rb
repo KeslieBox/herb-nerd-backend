@@ -26,6 +26,6 @@ class HerbsController < ApplicationController
     private
 
     def herb_params
-        params.require(:herb).permit(:common_name, :latin_name, :history, :spiritual_uses, :medicinal_uses,  property_ids: [])
+        params.require(:herb).permit(:common_name, :latin_name, :history, :spiritual_uses, :medicinal_uses,  property_ids: [], properties_attributes: [:name])
     end
 end

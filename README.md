@@ -1,24 +1,33 @@
-# README
+# Herb Nerd Ecyclopedia
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an application created for herb nerds of kinds, near and far! This is currently usable for your personal herbal encyclopedia, but maybe one day it can be an open source application like Wikipedia where anyone can contribute to its resources and shared-knowledge.
 
-Things you may want to cover:
+## Cloning & Setup
 
-* Ruby version
+### Frontend Setup
 
-* System dependencies
+-To set up the frontend, please visit: https://github.com/KeslieBox/herb-nerd-frontend then follow the guidelines below(also included in the frontend README):
 
-* Configuration
+-Fork and clone the frontend repository linked above & run ```git clone <github-repo-code>``` from your terminal
 
-* Database creation
+-```cd``` into the directory (I recommend setting up a folder to house both the front and backend and clone both repositories there)
 
-* Database initialization
+-run ```explorer.exe index.html to get the browser running (note this may be a different command for Mac and sometimes even for Windows users)
 
-* How to run the test suite
+-after cloning the frontend to your computer, set up the backend as instructed below:
 
-* Services (job queues, cache servers, search engines, etc.)
+### Backend Setup
 
-* Deployment instructions
+-Fork and clone this repository & run ```git clone <github-repo-code>``` from your terminal
 
-* ...
+-run ```bin/rails db:migrate RAILS_ENV=development```
+
+-run ```bundle install```
+
+-run ```rails s``` in the terminal to start your server
+
+-Finally go to <http://localhost:3000/> in your browser
+
+From here, you can begin using the application and playing around with the database, adding herbs to it, editing what is there to your liking, etc!
+
+Thanks for trying out the app, enjoy herb-nerding out!
